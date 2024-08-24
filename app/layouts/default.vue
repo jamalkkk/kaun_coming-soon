@@ -1,16 +1,16 @@
 <script setup lang="ts">
-  // ...
+// ...
 </script>
 
 <template>
   <div>
     <!-- <div class="container mx-auto"> -->
     <div
-      class="min-h-screen flex flex-col bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50"
+      class="min-h-screen flex flex-col bg-white dark:bg-black animate-wiggle"
     >
-      <NavBar class="fixed shadow z-20 bg-white dark:bg-neutral-950" />
+      <NavBar class="fixed z-20" />
       <div class="mt-24">
-        <main class="shadow">
+        <main>
           <slot />
         </main>
       </div>

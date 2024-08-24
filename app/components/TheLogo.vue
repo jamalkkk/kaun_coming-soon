@@ -1,90 +1,23 @@
 <script setup lang="ts">
-  import site from '~~/site'
-  const { name, logo } = site
+import site from '~~/site'
+const { name, logo } = site
 </script>
 <template>
-  <NuxtLink data-pg-name="Logo" class="flex items-center sm:flex-row" to="/">
-    <!-- <BaseIcon height="40" class="mt-2" :name="logo" /> -->
-    <svg
-      version="1.0"
-      xmlns="http://www.w3.org/2000/svg"
-      width="2.5em"
-      xml:space="preserve"
-      fill="currentColor"
-      viewBox="0 0 240 240"
-      height="2.5em"
-      class="mr-2"
-    >
-      <g transform="translate(17.704 -9.215)">
+  <NuxtLink
+    data-pg-name="Logo"
+    class="flex items-center sm:flex-row fill-white"
+    to="/"
+  >
+    <div class="h-8 w-8 animate-[spin_10s_linear_infinite]">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206.9 206.9">
         <path
-          d="M92.45 183.38a61.38 61.38 0 00-30.07 15.35 9.84 9.84 0 01-15.9-3.73 61.65 61.65 0 11115.83-.18 9.87 9.87 0 01-16 3.9 61.43 61.43 0 00-30.07-15.35"
-          fill="#99cd31"
-          stroke="#475f17"
-          stroke-miterlimit="10"
-          stroke-width="12"
+          class="fill-black dark:fill-white"
+          d="M176.6,30.3Q146.3,0,103.45,0T30.3,30.3Q0,60.6,0,103.45T30.3,176.6q30.3,30.3,73.15,30.3t73.15-30.3q30.3-30.3,30.3-73.15T176.6,30.3ZM142,106.7a78.11,78.11,0,0,1-5.9,26.15q-4.8,11.51-11.8,16.1a24.83,24.83,0,0,1-12.2,4,35.31,35.31,0,0,1-13-1.6,105.16,105.16,0,0,1-14.35-6.1q-4.2-2.1-5.65-2.9a47.18,47.18,0,0,1-5.4-3.45,35.57,35.57,0,0,1-9.4-10.9,41.73,41.73,0,0,1-4.8-13.65Q57.1,100.65,62.7,85.75A45.11,45.11,0,0,1,69.2,73.6a26.34,26.34,0,0,1,10.4-8.4,31.35,31.35,0,0,1,12.9-2.1q1.75,0,13.35,1.15c1.47.17,3.63.38,6.5.65a34.48,34.48,0,0,1,6.35,1.3,25.81,25.81,0,0,1,9.1,5.15,25.53,25.53,0,0,1,6.35,8.4c.33.73.8,1.9,1.4,3.5s1,2.73,1.4,3.5.92,1.83,1.85,3.6a39.7,39.7,0,0,1,1.7,3.6Q142.41,98.85,142,106.7Z"
         />
-        <circle
-          cx="17.18"
-          cy="17.18"
-          r="17.18"
-          transform="rotate(-22.39 282.115 44.556)"
-          fill="#99cd31"
-          stroke="#475f17"
-          stroke-miterlimit="10"
-          stroke-width="12"
-        />
-        <circle
-          cx="17.18"
-          cy="17.18"
-          r="17.18"
-          transform="rotate(-22.39 179.693 -83.499)"
-          fill="#99cd31"
-          stroke="#475f17"
-          stroke-miterlimit="10"
-          stroke-width="12"
-        />
-        <circle
-          cx="17.18"
-          cy="17.18"
-          r="17.18"
-          transform="rotate(-67.61 176.48 -54.394)"
-          fill="#99cd31"
-          stroke="#475f17"
-          stroke-miterlimit="10"
-          stroke-width="12"
-        />
-        <circle
-          cx="17.18"
-          cy="17.18"
-          r="17.18"
-          transform="rotate(-67.61 119.616 -48.074)"
-          fill="#99cd31"
-          stroke="#475f17"
-          stroke-miterlimit="10"
-          stroke-width="12"
-        />
-        <circle
-          cx="3.19"
-          cy="3.19"
-          r="3.19"
-          transform="translate(101.16 179.05)"
-          fill="#475f17"
-        />
-        <path
-          d="M89.72 137a20.84 20.84 0 00-20.84 20.84v.16"
-          fill="none"
-          stroke="#475f17"
-          stroke-miterlimit="10"
-          stroke-width="12"
-        />
-        <path
-          d="M15.7 47.82h-2.75v-2.76a3.4 3.4 0 00-6.79 0v2.76H3.4a3.4 3.4 0 000 6.79h2.75v2.76a3.4 3.4 0 006.79 0v-2.76h2.76a3.4 3.4 0 000-6.79zm172.43 9.55h-2.76v-2.76a3.4 3.4 0 00-6.79 0v2.76h-2.76a3.4 3.4 0 000 6.79h2.76v2.76a3.4 3.4 0 006.79 0v-2.76h2.76a3.4 3.4 0 000-6.79zM25.25 203.82H22.5v-2.76a3.4 3.4 0 00-6.79 0v2.76h-2.76a3.4 3.4 0 000 6.79h2.75v2.76a3.4 3.4 0 006.79 0v-2.76h2.76a3.4 3.4 0 000-6.79z"
-          fill="#475f17"
-        />
-      </g>
-    </svg>
+      </svg>
+    </div>
     <h6
-      class="text-primary-600 dark:text-primary-200 font-extrabold font-serif ml-2 mt-4 text-2xl"
+      class="text-black dark:text-white font-extrabold font-serif ml-2 mt-4 text-2xl"
     >
       {{ name }}
     </h6>

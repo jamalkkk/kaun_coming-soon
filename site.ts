@@ -3,7 +3,7 @@
 // @unocss-include
 
 export default {
-  name: 'Happy Paws',
+  name: 'Kaun',
   description: 'Adopt Your Fur Mate',
   logo: 'i-noto:cat-face',
   author: 'Pinegrow',
@@ -17,8 +17,6 @@ export default {
   trailingSlash: false, // default
   titleSeparator: '|', // default
   nav: [
-    { text: 'Home', link: '/', type: 'primary', icon: 'i-mdi-home' },
-    { text: 'Adopt Now', link: '/adopt', type: 'primary', icon: 'i-mdi-home' },
     {
       text: 'Donate',
       link: '/quick-start',

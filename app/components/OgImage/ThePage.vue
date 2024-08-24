@@ -1,57 +1,57 @@
 <script setup lang="ts">
-  // inherited attrs can mess up the satori parser
-  defineOptions({
-    inheritAttrs: false,
-  })
+// inherited attrs can mess up the satori parser
+defineOptions({
+  inheritAttrs: false,
+})
 
-  const props = defineProps({
-    title: {
-      type: String,
-      default: '',
-    },
-    description: {
-      type: String,
-      default: '',
-    },
-    summary: {
-      type: String,
-      default: '',
-    },
-    fromBg: {
-      type: String,
-      default: '#8B5CF6',
-    },
-    toBg: {
-      type: String,
-      default: '#D946EF',
-    },
-    image: {
-      type: String,
-      default: '',
-    },
-    logo: {
-      type: String,
-      default: 'i-vscode-icons:file-type-coffeelint',
-    },
-    author: {
-      type: String,
-      default: 'Pinegrow',
-    },
-    twitter: {
-      type: String,
-      default: '@vuedesigner',
-    },
-  })
+const props = defineProps({
+  title: {
+    type: String,
+    default: '',
+  },
+  description: {
+    type: String,
+    default: '',
+  },
+  summary: {
+    type: String,
+    default: '',
+  },
+  fromBg: {
+    type: String,
+    default: '#8B5CF6',
+  },
+  toBg: {
+    type: String,
+    default: '#D946EF',
+  },
+  image: {
+    type: String,
+    default: '',
+  },
+  logo: {
+    type: String,
+    default: 'i-vscode-icons:file-type-coffeelint',
+  },
+  author: {
+    type: String,
+    default: 'Pinegrow',
+  },
+  twitter: {
+    type: String,
+    default: '@vuedesigner',
+  },
+})
 
-  const backgroundImage = computed(() => {
-    return {
-      'background-image': `linear-gradient(
+const backgroundImage = computed(() => {
+  return {
+    'background-image': `linear-gradient(
         to right,
         ${props.fromBg},
         ${props.toBg}
       );`,
-    }
-  })
+  }
+})
 </script>
 <template>
   <div class="rounded-3xl w-full" :style="backgroundImage">
@@ -136,7 +136,6 @@
               />
             </g>
           </svg>
-
           <span class="text-white font-extrabold ml-2 mt-4 p-4 text-6xl">
             {{ title }}
           </span>
